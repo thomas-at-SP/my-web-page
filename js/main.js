@@ -1,6 +1,21 @@
+// ThreePipe + GSAP:
+// import {
+//     ThreeViewer
+// } from 'threepipe';
+// import {gsap} from 'gsap';
+
+// ThreePipe + GSAP with access to Three methods
+// import * as THREE from 'threepipe';
+// These ones are in root level, not in addons subfolder
+// import { OrbitControls } from 'threepipe';
+// import { GLTFLoader } from 'threepipe';
+// // ThreeViewer == THREE.ThreeViewer
+
+// Three + GSAP:
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three';
+import { gsap } from "gsap";
 
 
 const scene = new THREE.Scene();

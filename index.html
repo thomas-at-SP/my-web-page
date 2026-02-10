@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=1920, initial-scale=1.0">
     <title>My Web Page</title>
     <link rel="stylesheet" href="styles.css"/>
+    <!-- ThreePipe + GSAP -->
+    <!--
     <script type="importmap">
-    {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
-            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+        {
+            "imports": {
+                "threepipe": "https://unpkg.com/threepipe/dist/index.mjs",
+                "gsap": "https://cdn.jsdelivr.net/npm/gsap@latest/index.js"
+            }
         }
-    }
-</script>
+    </script>
+    -->
+    <!-- Three + GSAP -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/",
+                "gsap": "https://cdn.jsdelivr.net/npm/gsap@latest/index.js"
+            }
+        }
+    </script>
 </head>
 <body>
     <h1>Welcome to my web page!</h1>
     <div id="container3d"></div>
+    <div class="box gradient-green green"></div>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
